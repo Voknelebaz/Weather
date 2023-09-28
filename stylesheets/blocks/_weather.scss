@@ -1,0 +1,128 @@
+.weather {
+    background: rgb(53, 50, 84);
+    background: radial-gradient(circle, rgba(53, 50, 84, 1) 0%, rgba(99, 49, 59, 1) 100%);
+    height: 100vh;
+    display: flex;
+    // .weather__card
+    &__card {
+        background: rgb(55, 101, 235);
+        background: radial-gradient(circle, rgba(55, 101, 235, 1) 0%, rgba(244, 56, 94, 1) 100%);
+        width: 31.25rem;
+        margin: auto;
+        padding: 1.25rem;
+        border-radius: 1.5rem;
+    }
+    // .weather__search
+    &__search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    // .weather__input
+    &__input {
+        height: 2.5rem;
+        border-radius: 1rem;
+        padding: 0.75rem;
+        box-shadow: none;
+        border: none;
+    }
+    @media (max-width: 21.875rem) {
+        &__search {
+            flex-direction: column;
+        }
+        &__input {
+            width: 10rem;
+        }
+        &__input::placeholder {
+            font-size: 0.9rem;
+        }
+    }
+    // .weather__button
+    &__button img {
+        max-width: 1rem;
+    }
+    &__button {
+        padding: 0.625rem 0.8125rem;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    // .weather__card-mid
+    &__card-mid {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    // .weather__card-img
+    &__card-img {
+    }
+    // .weather__card-temp
+    &__card-temp {
+        font-size: 2rem;
+        font-weight: 600;
+        color: antiquewhite;
+    }
+    // .weather__card-city
+    &__card-city {
+        font-size: 2rem;
+        font-weight: 600;
+        color: antiquewhite;
+    }
+    // .weather__card-bottom
+    &__card-bottom {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+    // .weather__humidity
+    &__humidity {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    &__info-humidity {
+    }
+    // .weather__humidity-img
+    &__humidity-img {
+        width: 48px;
+    }
+    // .weather__humidity-perecentage
+    &__humidity-perecentage {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: antiquewhite;
+    }
+    // .weather__humidity-title
+    &__humidity-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: antiquewhite;
+    }
+    // .weather__wind
+    &__wind {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    // .weather__wind-img
+    &__wind-img {
+        width: 48px;
+    }
+    // .weather__wind-perecentage
+    &__wind-speed {
+        font-size: 1.5em;
+        font-weight: 600;
+        color: antiquewhite;
+    }
+    // .weather__wind-title
+    &__wind-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: antiquewhite;
+    }
+}
