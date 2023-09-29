@@ -241,13 +241,11 @@ template {
 }
 
 .weather {
-  background: rgb(53, 50, 84);
   background: radial-gradient(circle, rgb(53, 50, 84) 0%, rgb(99, 49, 59) 100%);
   height: 100vh;
   display: flex;
 }
 .weather__card {
-  background: rgb(55, 101, 235);
   background: radial-gradient(circle, rgb(55, 101, 235) 0%, rgb(244, 56, 94) 100%);
   width: 31.25rem;
   margin: auto;
@@ -259,6 +257,17 @@ template {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+.weather__wrapper {
+  display: none;
+}
+.weather__error {
+  margin-top: 1.5rem;
+  text-align: center;
+  display: none;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #FFE4D6;
 }
 .weather__input {
   height: 2.5rem;
@@ -298,12 +307,12 @@ template {
 .weather__card-temp {
   font-size: 2rem;
   font-weight: 600;
-  color: antiquewhite;
+  color: #FFE4D6;
 }
 .weather__card-city {
   font-size: 2rem;
   font-weight: 600;
-  color: antiquewhite;
+  color: #FFE4D6;
 }
 .weather__card-bottom {
   margin-top: 2rem;
@@ -324,12 +333,12 @@ template {
 .weather__humidity-perecentage {
   font-size: 1.5rem;
   font-weight: 600;
-  color: antiquewhite;
+  color: #FFE4D6;
 }
 .weather__humidity-title {
   font-size: 1rem;
   font-weight: 600;
-  color: antiquewhite;
+  color: #FFE4D6;
 }
 .weather__wind {
   display: flex;
@@ -342,12 +351,12 @@ template {
 .weather__wind-speed {
   font-size: 1.5em;
   font-weight: 600;
-  color: antiquewhite;
+  color: #FFE4D6;
 }
 .weather__wind-title {
   font-size: 1rem;
   font-weight: 600;
-  color: antiquewhite;
+  color: #FFE4D6;
 }
 
 body {

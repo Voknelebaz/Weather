@@ -1,12 +1,10 @@
 .weather {
-    background: rgb(53, 50, 84);
-    background: radial-gradient(circle, rgba(53, 50, 84, 1) 0%, rgba(99, 49, 59, 1) 100%);
+    background: $bg-body;
     height: 100vh;
     display: flex;
     // .weather__card
     &__card {
-        background: rgb(55, 101, 235);
-        background: radial-gradient(circle, rgba(55, 101, 235, 1) 0%, rgba(244, 56, 94, 1) 100%);
+        background: $bg-card;
         width: 31.25rem;
         margin: auto;
         padding: 1.25rem;
@@ -19,7 +17,17 @@
         align-items: center;
         gap: 1rem;
     }
-
+    &__wrapper {
+        display: none;
+    }
+    &__error {
+        margin-top: 1.5rem;
+        text-align: center;
+        display: none;
+        font-size: 2rem;
+        font-weight: 600;
+        color: $main-color;
+    }
     // .weather__input
     &__input {
         height: 2.5rem;
@@ -62,13 +70,13 @@
     &__card-temp {
         font-size: 2rem;
         font-weight: 600;
-        color: antiquewhite;
+        color: $main-color;
     }
     // .weather__card-city
     &__card-city {
         font-size: 2rem;
         font-weight: 600;
-        color: antiquewhite;
+        color: $main-color;
     }
     // .weather__card-bottom
     &__card-bottom {
@@ -95,13 +103,13 @@
     &__humidity-perecentage {
         font-size: 1.5rem;
         font-weight: 600;
-        color: antiquewhite;
+        color: $main-color;
     }
     // .weather__humidity-title
     &__humidity-title {
         font-size: 1rem;
         font-weight: 600;
-        color: antiquewhite;
+        color: $main-color;
     }
     // .weather__wind
     &__wind {
@@ -117,12 +125,12 @@
     &__wind-speed {
         font-size: 1.5em;
         font-weight: 600;
-        color: antiquewhite;
+        color: $main-color;
     }
     // .weather__wind-title
     &__wind-title {
         font-size: 1rem;
         font-weight: 600;
-        color: antiquewhite;
+        color: $main-color;
     }
 }
