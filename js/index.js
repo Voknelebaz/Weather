@@ -16,19 +16,19 @@ async function checkWeather(city) {
         document.querySelector(".weather__humidity-perecentage").innerHTML = data.main.humidity + "%"
         document.querySelector(".weather__wind-speed").innerHTML = data.wind.speed + "km/h"
         if (data.weather[0].main == "Clear") {
-            weather__icon.src = "./assets/images/clear.png"
+            weather__icon.src = "assets/images/clear.png"
         } else if (data.weather[0].main == "Clouds") {
-            weather__icon.src = "./assets/images/clouds.png"
+            weather__icon.src = "assets/images/clouds.png"
         } else if (data.weather[0].main == "Drizzle") {
-            weather__icon.src = "./assets/images/drizzle.png"
+            weather__icon.src = "assets/images/drizzle.png"
         } else if (data.weather[0].main == "Rain") {
-            weather__icon.src = "./assets/images/rain.png"
+            weather__icon.src = "assets/images/rain.png"
         } else if (data.weather[0].main == "Mist") {
-            weather__icon.src = "./assets/images/mist.png"
+            weather__icon.src = "assets/images/mist.png"
         } else if (data.weather[0].main == "Snow") {
-            weather__icon.src = "./assets/images/snow.png"
+            weather__icon.src = "assets/images/snow.png"
         } else if (data.weather[0].main == "Wind") {
-            weather__icon.src = "./assets/images/wind.png"
+            weather__icon.src = "assets/images/wind.png"
         }
         document.querySelector(".weather__wrapper").style.display = "block"
         document.querySelector(".weather__error").style.display="none"
